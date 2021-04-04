@@ -1,10 +1,9 @@
-import Header from '../Header';
-import './App.css';
+import StoriesContainer from '../../containers/StoriesContainer';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Header />
+      <StoriesContainer />
     </div>
   );
 }

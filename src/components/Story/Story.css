@@ -1,0 +1,28 @@
+.story {
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px 10px 0;
+}
+
+.story:first-of-type {
+  border-top: 0;
+}
+
+.story:last-of-type {
+  border-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.story__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin: 0;
+  color: #222;
+}
+
+.story__by,
+.story__time {
+  font-weight: bold;
+  color: #111;
+}
