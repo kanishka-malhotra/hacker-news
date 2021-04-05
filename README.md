@@ -9,6 +9,10 @@ This project implements a fresh view of HackerNews, using their public API.
 - CSS3
 - Jest
 
+## System requirements
+
+This project has been developed on MacOS Catalina v10.15.7, using NodeJS v14.16.0. Please use a machine with similar configuration to run/execute this code.
+
 ## Available Scripts
 
 In the project directory, you can run:
