@@ -4,8 +4,6 @@ import Story from '../../components/Story';
 import { getTopStoryIds } from '../../services/api';
 import useInfiniteScroll from '../../hooks/useInfiniteScroll';
 
-import './StoriesContainer.css';
-
 const StoriesContainer = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -20,15 +18,14 @@ const StoriesContainer = () => {
   }, []);
 
   return (
-    <section className="stories-container">
-      <h1>Hacker News (Reloaded)</h1>
+    <div className="stories-container">
       {loading && <div>Loading...</div>}
       {error ? (
         <div>We are unable to fetch the posts right now.</div>
       ) : (
         storyIds.slice(0, count).map(storyId => <Story key={storyId} storyId={storyId} />)
       )}
-    </section>
+    </div>
   );
 };
 

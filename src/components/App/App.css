@@ -1,11 +1,11 @@
-.stories-container {
+.app {
   max-width: 100%;
   padding: 20px 15px;
   margin: 0 auto;
 }
 
 @media (min-width: 1025px) {
-  .stories-container {
+  .app {
     width: 75%;
   }
 }
