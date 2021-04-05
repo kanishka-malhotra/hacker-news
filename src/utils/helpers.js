@@ -1,7 +1,7 @@
 export const getTimeFromNow = timestamp => {
   const seconds = Math.floor((new Date() - timestamp * 1000) / 1000);
 
-  let value = Math.floor(seconds / 3153600);
+  let value = Math.floor(seconds / 31536000);
   if (value > 1) {
     return `${value} years`;
   }

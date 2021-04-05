@@ -1,11 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 import { STORY_BATCH_SIZE, TOTAL_STORIES } from '../constants';
+import debounce from '../utils/debounce';
 
 const useInfiniteScroll = () => {
   const [loading, setLoading] = useState(false);
   const [count, setCount] = useState(STORY_BATCH_SIZE);
 
-  const handleScroll = () => {
+  const handleScroll = debounce(() => {
     if (
       loading ||
       (window.innerHeight + document.documentElement.scrollTop) !== document.documentElement.offsetHeight
@@ -14,12 +16,10 @@ const useInfiniteScroll = () => {
     }
 
     setLoading(true);
-  }
+  }, 200);
 
   useEffect(() => {
-    if (!loading) {
-      return;
-    }
+    if (!loading) return;
 
     if (count + STORY_BATCH_SIZE >= TOTAL_STORIES) {
       setCount(TOTAL_STORIES);

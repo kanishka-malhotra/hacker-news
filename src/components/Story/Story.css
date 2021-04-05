@@ -1,7 +1,7 @@
 .story {
   border-top: 1px solid #ccc;
-  margin-bottom: 10px;
-  padding-top: 10px;
+  margin-bottom: 15px;
+  padding-top: 15px;
 }
 
 .story:first-of-type {
@@ -9,9 +9,7 @@
 }
 
 .story:last-of-type {
-  border-top: 0;
   margin-bottom: 0;
-  padding-top: 0;
 }
 
 .story__title {
@@ -21,8 +19,17 @@
   color: #222;
 }
 
-.story__by,
-.story__time {
+.story__title:hover {
+  text-decoration: none;
+}
+
+.story__meta {
+  font-style: italic;
+  font-size: 15px;
+  margin: 10px 0 0;
+}
+
+.story__meta-label {
   font-weight: bold;
   color: #111;
 }
