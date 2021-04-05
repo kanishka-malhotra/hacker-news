@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import { loginUser, registerUser } from '../../services/localApi';
+import PropTypes from 'prop-types';
 
 import './LoginContainer.css';
 
@@ -107,6 +108,14 @@ const LoginContainer = ({ isLoginMode }) => {
       </div>
     </div>
   );
+};
+
+LoginContainer.propTypes = {
+  isLoginMode: PropTypes.bool,
+};
+
+LoginContainer.defaultProps = {
+  isLoginMode: true,
 };
 
 export default LoginContainer;

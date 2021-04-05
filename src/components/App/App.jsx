@@ -4,7 +4,7 @@ import StoriesContainer from '../../containers/StoriesContainer';
 import LoginContainer from '../../containers/LoginContainer';
 import LogoutContainer from '../../containers/LogoutContainer';
 import NewStoryContainer from '../../containers/NewStoryContainer';
-import Navbar from '../../components/Navbar';
+import Navbar from '../Navbar';
 import withLogin from '../../utils/withLogin';
 
 import './App.css';

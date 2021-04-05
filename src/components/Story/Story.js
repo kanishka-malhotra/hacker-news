@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { getStoryFromId } from '../../services/api';
 import { getTimeFromNow } from '../../utils/helpers';
@@ -37,6 +38,10 @@ const Story = ({ storyId }) => {
       )}
     </div>
   ) : null;
+};
+
+Story.propTypes = {
+  storyId: PropTypes.number.isRequired,
 };
 
 export default Story;
