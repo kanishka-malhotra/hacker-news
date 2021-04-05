@@ -18,7 +18,6 @@ const LoginContainer = ({ isLoginMode }) => {
   }, [isLoginMode]);
 
   const handleChange = ({ target: { name, value } }) => {
-    console.log(formValues);
     setFormValues({
       ...formValues,
       [name]: value,

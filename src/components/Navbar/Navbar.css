@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.navbar__header {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
 .navbar__links {
   display: flex;
   list-style-type: none;

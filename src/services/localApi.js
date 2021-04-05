@@ -8,11 +8,13 @@ export const setUsers = (users) => {
   window.sessionStorage.setItem('users', JSON.stringify(users));
 };
 
+export const getCurrentUser = () => window.sessionStorage.getItem('currentUser');
+
 export const setCurrentUser = (username) => {
   window.sessionStorage.setItem('currentUser', username);
 };
 
-export const isLoggedIn = () => window.sessionStorage.getItem('currentUser');
+export const isLoggedIn = () => !!getCurrentUser();
 
 export const loginUser = (loginData) => {
   const users = getUsers();

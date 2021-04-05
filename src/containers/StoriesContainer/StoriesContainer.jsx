@@ -21,7 +21,7 @@ const StoriesContainer = () => {
     <div className="stories-container">
       {loading && <div>Loading...</div>}
       {error ? (
-        <div>We are unable to fetch the posts right now.</div>
+        <div>We are unable to fetch the posts right now. Please try again later.</div>
       ) : (
         storyIds.slice(0, count).map(storyId => <Story key={storyId} storyId={storyId} />)
       )}
