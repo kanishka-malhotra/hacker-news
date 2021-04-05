@@ -1,7 +1,7 @@
 .story {
   border-top: 1px solid #ccc;
   margin-bottom: 10px;
-  padding: 10px 10px 0;
+  padding-top: 10px;
 }
 
 .story:first-of-type {
@@ -11,7 +11,7 @@
 .story:last-of-type {
   border-top: 0;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .story__title {

@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 
 import { getStoryFromId } from '../../services/api';
+import { getTimeFromNow } from '../../utils/helpers';
 import './Story.css';
 
 const Story = ({ storyId }) => {
@@ -21,7 +22,7 @@ const Story = ({ storyId }) => {
       <p>
         <span className="story__by">By:</span> {story.by}
         {` | `}
-        <span className="story__time">Posted:</span> {story.time}
+        <span className="story__time">Posted:</span> {getTimeFromNow(story.time)}
       </p>
     </div>
   ) : null;

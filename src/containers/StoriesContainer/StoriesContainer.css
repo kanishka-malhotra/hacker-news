@@ -1,0 +1,11 @@
+.stories-container {
+  max-width: 100%;
+  padding: 20px 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1025px) {
+  .stories-container {
+    width: 75%;
+  }
+}
